@@ -45,6 +45,6 @@ https://replit.com/join/xlqejazmmj-saxgetty
 **8.** For each demographic age X (ex: 18) and above, find the tier of permission total.  
 
 ## Additional Notes
-1. The 2 Triggers, 1 Function, and 1 Procedure are found in databasemodel.sql.  
-2. My procedure is called in inserts.sql.  
-3. Both databasemodel.sql and inserts.sql have been edited since M2.
+**1.** The 2 Triggers, 1 Function, and 1 Procedure are found in databasemodel.sql.  
+**2.** My procedure is called in inserts.sql.  
+**3.** Both databasemodel.sql and inserts.sql have been edited since M2.
