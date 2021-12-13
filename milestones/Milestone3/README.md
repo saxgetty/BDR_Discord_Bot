@@ -41,5 +41,10 @@ https://replit.com/join/xlqejazmmj-saxgetty
 **4.** For each technology, find the number of uses for each type (phone, computer, tablet).   
 **5.** Find the total user ticket files that are created before DATE (ex: 2021-11-07).    
 **6.** Find the most purchased account option after X (ex: 2) month(s) subscribed.   
-**7.** Find the number of distinct Look Ups stored by a Blog Paid User with a subscription longer than X month(s) (ex: 8) and a category look up count larger than X (ex: 10).    
+**7.** Find the number of distinct Look Ups stored by a Blog Paid User with a subscription longer than X month(s) (ex: 8) and a category look up count larger than X (ex: 10).   
 **8.** For each demographic age X (ex: 18) and above, find the tier of permission total.  
+
+## Additional Notes
+1. The 2 Triggers, 1 Function, and 1 Procedure are found in databasemodel.sql.  
+2. My procedure is called in inserts.sql.  
+3. Both databasemodel.sql and inserts.sql have been edited since M2.
