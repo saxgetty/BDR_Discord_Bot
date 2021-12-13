@@ -1,4 +1,5 @@
-# bot.py
+# main.py
+# Samantha Saxton-Getty
 # This file is intended to be a "getting started" code example for students.
 # The code in this file is fully functional.
 # Students are free to edit the code in the milestone 3 folder.
@@ -13,15 +14,14 @@ import database as db
 # environment variables
 token = os.environ['DISCORD_TOKEN']
 server = os.environ['DISCORD_GUILD']
-server_id = os.environ['SERVER_ID']  # optional
-channel_id = os.environ['CHANNEL_ID']  # optional
+# server_id = os.environ['SERVER_ID']  # optional
+# channel_id = os.environ['CHANNEL_ID']  # optional
 
 # database connection
 # secret keys related to your database must be updated. Otherwise, it won't work
 db_conn = db.connect()
 # bot events
 client = discord.Client()
-
 
 @client.event
 async def on_ready():
@@ -32,7 +32,6 @@ async def on_ready():
     :return: VOID
     """
     print("{} has joined the server".format(client.user.name))
-
 
 @client.event
 async def on_message(message):
@@ -49,15 +48,14 @@ async def on_message(message):
     else:
         # A message was send by the user.
         msg = message.content.lower()
-        if "milestone3" in msg:
-            response = "I am alive. Signed: 'your bot'"
+        response = db.get_response(msg)
+             
     if response:
         # bot sends response to the Discord API and the response is show
         # on the channel from your Discord server that triggered this method.
         embed = discord.Embed(description=response)
         await message.channel.send(embed=embed)
-
-
+  
 try:
     # start the bot and keep the above methods listening for new events
     client.run(token)
