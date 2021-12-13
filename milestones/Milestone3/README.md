@@ -1,4 +1,4 @@
-# Blog Management Database
+# Blog Management Database and Discord Bot
 
 ## Student Information
 Name: Samantha Saxton-Getty  
